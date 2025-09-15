@@ -2,30 +2,31 @@ const styles = {
     wrapper: {
         margin: 8,
         padding: 8,
-        flexDirection: "colum",
-        border: "1px solid grey",
-        borderRedius: 16,
-    },
-    imageContainer:{},
-    image: {
-        width:50,
-        geight:50,
-        borderRedius: 25,
-    },
-    contentContatiner:{
-        marginLeft:8,
         display: "flex",
-        flexDirection:"colum",
-        justifyConent: "center",
+        flexDirection: "column",
+        border: "1px solid grey",
+        borderRadius: 16,
+    },
+    imageContainer: {},
+    image: {
+        width: 50,
+        height: 50,
+        borderRadius: 25,
+    },
+    contentContainer: {
+        marginLeft: 8,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
     },
     nameText: {
         color: "black",
-        fontSize:16,
-        fontWeight:"bold",
+        fontSize: 16,
+        fontWeight: "bold",
     },
-    CommentText:{
-        color:"black",
-        fontSize:16,
+    commentText: {
+        color: "black",
+        fontSize: 16,
     },
 };
 
@@ -35,13 +36,13 @@ function Comment(props) {
             <div style={styles.imageContainer}>
                 <img
                     style={styles.image}
-                    src="https://upload.wikimedia.org/wikipedia/commons/8/89/Protrait_placeholder.png"
+                    src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
                     alt="프로필 사진"
                 />
             </div>
-            <div style={styles.contentContatiner}>
-                <span style={styles.nameText}>Su</span>
-                <span style={styles.CommentText}>제가 만든 첫 컴포턴트</span>
+            <div style={styles.contentContainer}>
+                <span style={styles.nameText}>{props.name}</span>
+                <span style={styles.commentText}>{props.comment}</span>
             </div>
         </div>
     );

@@ -5,7 +5,10 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 //import ConfirmDialog from "./Ch04/ConfirmDialog";
 //import { Welcome } from "./CH05/Welcome";
-import { App } from "./CH05/App";
+//import { App } from "./CH05/App";
+//import { Avatar } from "./CH05/Avatar;
+//import Comment from "./CH05/Comment";
+import CommentList from "./CH05/CommentList";
 
 /* 
 import Hello from "./Ch03/Hello";
@@ -67,7 +70,11 @@ function tick() {
  */
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    <CommentList />
+  </React.StrictMode>
+);
 
 //setInterval(tick, 1000);
 
