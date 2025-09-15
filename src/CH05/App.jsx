@@ -6,6 +6,7 @@ export function App(props) {
             <Welcome name="Mike"/>
             <Welcome name="Java" />
             <Welcome name="Python" />
+            <Welcome name="Test" />
 
         </div>
     )
