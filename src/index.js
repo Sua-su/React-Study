@@ -8,7 +8,12 @@ import reportWebVitals from "./reportWebVitals";
 //import { App } from "./CH05/App";
 //import { Avatar } from "./CH05/Avatar;
 //import Comment from "./CH05/Comment";
-import CommentList from "./CH05/CommentList";
+//import CommentList from "./CH05/CommentList";
+
+//import { LikeButton } from "./Ch06/LikeButton";
+//import LikeButton from "./Ch06/LikeButton"
+//import Notification from "./Ch06/Notificaltion";
+import NotificationList from "./Ch06/NotificationList";
 
 /* 
 import Hello from "./Ch03/Hello";
@@ -72,7 +77,7 @@ function tick() {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <CommentList />
+    <NotificationList />
   </React.StrictMode>
 );
 
