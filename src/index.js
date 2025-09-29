@@ -13,8 +13,8 @@ import reportWebVitals from "./reportWebVitals";
 //import { LikeButton } from "./Ch06/LikeButton";
 //import LikeButton from "./Ch06/LikeButton"
 //import Notification from "./Ch06/Notificaltion";
-import NotificationList from "./Ch06/NotificationList";
-
+//import NotificationList from "./Ch06/NotificationList";
+import Counter from "./Ch07/Counter";
 /* 
 import Hello from "./Ch03/Hello";
 
@@ -77,7 +77,7 @@ function tick() {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <NotificationList />
+    <Counter />
   </React.StrictMode>
 );
 
