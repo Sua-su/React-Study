@@ -1,16 +1,24 @@
 import { useState } from "react";
-import Factorial from "./Factorial";
 
-function FactorialContainer(props) {
-    const [n, setN] = useState(10);
+function Factorial(props) {
+    function factorial(n){
+        console.log(`factorial(${n})`);
+        if (n <= 1) return 1; // Base case to prevent infinite recursion
+        return n * factorial(n-1);
+    }
+    const [isPolite, setIsPolite] = useState(true);
+ 
     return(
         <>
-            <label>n:</label>
-            <input type="number" value={n}
-                onChange={(e) => {setN(Number(e.target.value))}} />
-            <Factorial n={n} />
+            <label>n: </label>
+            <b>{props.n} </b>
+            <b>{factorial(props.n)} </b>
+            <br />
+            <button onClick={() => {setIsPolite(!isPolite)}}>
+                {isPolite ? "정중하게" : "무례하게"}
+            </button>
+            <p>{isPolite ? "감사합니다!" : "더 주세요!"}</p>
         </>
-    );
+    )
 }
-
-export default FactorialContainer;
+export default Factorial;

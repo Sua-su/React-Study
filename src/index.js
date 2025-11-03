@@ -17,7 +17,10 @@ import reportWebVitals from "./reportWebVitals";
 //import Counter from "./Ch07/Counter";
 //import CounterContainer from "./Ch07/CounterContainer";
 //import { ChatRoomContainer } from "./Ch07/chatRoom";
-import FactorialContainer from "./Ch07/FactorialContainer";
+//import FactorialContainer from "./Ch07/FactorialContainer";
+//import Toggle from "./Ch08/Toggle";
+//import ConfirButton from "./Ch08/ConfirButton";
+import Greeting from "./Ch09/Greeting";
 
 /* 
 import Hello from "./Ch03/Hello";
@@ -81,7 +84,7 @@ function tick() {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <FactorialContainer />
+    <Greeting />
   </React.StrictMode>
 );
 
